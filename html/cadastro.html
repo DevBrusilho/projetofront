@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <button><a href="login.html">Faça seu Login!</a></button>
+    <h1>VisionTech</h1>
+    <p>-Além da visão-</p>
+  </header>
+  <nav>
+    <a href="index.html"> Página Inicial</a>        
+    <a href="cadastro.html">Cadastre-se Aqui!</a>
+  </nav>
+  <main>
+    <article>
+        <form>
+            <h2>Cadastro</h2>
+            <div>
+                <label>Nome Completo:</label> <input type="text" name="nome" id="idNome" placeholder="Digite seu nome" required minlength="1" maxlength="40">
+            </div>
+            <div>
+                <label>Data de Nascimento:</label> <input type="date" name="dataNascimento" id="idDataNascimento" placeholder="Digite sua data de nascimento" required>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" id="rbdSexoMasculino" name="rdbSexo" value="M"> Masculino
+                <input type="radio" id="rbdSexoFeminino" name="rdbSexo"
+                checked="checked" value="F"> Feminino
+            </div>
+            <div>
+                <label>Nome da Mãe:</label> <input type="text" name="nomeMae" id="idNomeMae" placeholder="Digite o nome da sua mãe" required minlength="1" maxlength="45">
+            </div>
+            <div>
+                <label>CPF:</label> <input type="text" name="cpf" id="idCpf" placeholder="Digite seu CPF" required
+                pattern="\d{3}.\d{3}.\d{3}-\d{2}"
+                title="Digite o CPF no formato nnn.nnn.nnn-nn">
+            </div>
+            <div>
+                <label>E-Mail:</label> <input type="email" name="email" id="idEmail" placeholder="Ex. joao@email.com"
+                required minlength="1" maxlength="45">
+            </div>
+    
+            <div>
+                <label>Telefone Cel.:</label> <input type="tel" name="telCel" placeholder="Ex. (99) 91234-5678"
+                required minlength="1" maxlength="15"
+                title="Digite o Tel. Cel no formato (99) 91234-5678">
+            </div>
+    
+            <div>
+                <label>Telefone Fixo:</label> <input type="tel" name="telFixo" placeholder="Ex. (99) 1234-5678"
+                required minlength="1" maxlength="14"
+                title="Digite o Tel. Fixo no formato (99) 1234-5678">
+            </div>
+            <div>
+                <div id="end">
+                <h3>Endereço Completo</h3>
+            </div>
+            <div>
+            <label>Rua:</label>
+            <input name="rua" id="rua" cols="35" rows="7" minlength="1" maxlength="150" required
+            placeholder="Ex. Rua das Margaridas, Esperança, Sorocaba, SP">
+            </div>
+            <div>
+            <label id="bairro">Bairro:</label>
+            <input name="bairro" id="bairro" cols="35" rows="7" minlength="1" maxlength="150" required
+            placeholder="Ex. Rua das Margaridas, N 10, Bairro Jd. Esperança, Sorocaba, SP">
+            </div>
+            <div>
+                <label>Cidade:</label>
+                <input name="rua" id="rua" cols="35" rows="7" minlength="1" maxlength="150" required
+                placeholder="Ex. Rua das Margaridas, N 10, Bairro Jd. Esperança, Sorocaba, SP">
+            </div>
+            <div>
+                <label>Login:</label> <input type="text" name="login" id="idLogin" placeholder="Digite o seu Login."
+                required minlength="1" maxlength="14"
+                title="Digite o seu Login">
+            </div>
+            <div>
+                <label>Senha:</label> <input type="password" name="senha" id="idSenha" placeholder="Mín. 6 e max. 8 caracteres."
+                required minlength="6" maxlength="8"
+                title="Digite a sua Senha - Mín. 6 e max 8 caracteres">
+            </div>
+            <div>
+                <label>Confirmação de Senha:</label> <input type="password" name="confirmeSenha" id="idConfirmeSenha" placeholder="Mín. 6 e max. 8 caracteres."
+                required minlength="6" maxlength="8"
+                title="Mín. 6 e max 8 caracteres">
+            </div>
+            <div id="botoes">
+                <button type="submit" class="cadastro">Enviar</button>
+                <button type="reset" class="cadastro">Limpar Tela</button>
+
+            </div>    
+          </form>
+    </article>
+  </main>
+  <footer>
+    <button><a href="index.html">Voltar</a></button>
+  </footer>
+</body>
+</html>

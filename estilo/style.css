@@ -1,0 +1,252 @@
+
+@charset "utf-8";
+@font-face {  
+  font-family:'neon';
+  src: url(../fontes/Quantum.otf);
+}
+:root{     
+  --cor1: #1F4457; 
+  --cor2: #799DA9;
+  --cor3: #a6691f;
+  --cor4: #e2ba63; 
+  --cor5: #7bb716;
+  --cor6: #a27744;
+  --cor7: #0b6d8e; 
+  --cor8: #5785a8;
+  --cor9: #c6975d;
+  --cor10: #b5b5b5;
+  --cor11: #0479b44d;
+  --cor12: #f2d597;
+  --cor13: rgba(179, 10, 10);
+  /* falta declaração de fontes */
+  --fonte-padrao: arial, verdana, helvetica, sans-serif;
+}
+*{       
+  margin: 0px;
+  padding:0px;
+}
+body{   
+  width: 100%;  
+  background-color: var(--cor11);
+  font-family: var(--fonte-padrao);
+}
+header{   
+  background-image: linear-gradient(to bottom, var(--cor7), var(--cor8), var(--cor2)); 
+  text-align: center; 
+  padding-top: 10px;
+}
+header > h1{       
+  color:var(--cor5);
+  font-family:'neon'; 
+  margin-bottom: 20px;
+  font-size: 4em;
+  text-shadow:3px 3px 2px rgb(138, 200, 241);
+}
+header > p{
+  color: var(--cor13);
+  font-size: 1.2em;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-shadow: 2px 2px 2px rgba(241, 234, 234, 0.719);
+  font-weight: bold;
+}
+header > button{
+  display: inline-block;
+  margin-left:92%;
+  background-color:var(--cor5);
+  border:2px,solid,var(--cor10);
+}
+header > button > a{
+  display: block;
+  text-decoration:none;
+  color:#eff1f1;
+  background-color:var(--cor5);
+  padding: 4px;
+  border-radius: 5px;
+}
+header > img{
+  width: 15%;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+nav{
+  background-color: var(--cor2);
+  padding: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
+}
+nav a{
+  color: var(--cor13); 
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.562);
+}
+nav a:hover{
+  background-color: var(--cor7);
+  color: white;
+  transition-duration: .5s;
+}
+main{
+  display: flex;
+  background-color: rgb(25, 96, 202);
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+  justify-content: center;
+
+}
+main p{
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1em;
+  width: 100%;
+}
+main h1{
+  color: var(--cor3);
+  font-family: 'neon';
+  font-weight: bold;
+  font-size: 1.8em;
+}
+main#login{
+  margin:auto;
+  align-items: center;
+  justify-content:center ;
+  height: 300px;
+}
+main#login button{
+  background-color: var(--cor5);
+  padding: 3px;
+  border-radius: 4px;
+  margin: 5px;
+}
+main#login a{
+  text-decoration: none;
+  color: white;
+}
+#total{
+  display: flex;
+  border: 1px solid #38230a7e;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  background-color: var(--cor2);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  margin-top: opx;
+}
+#total h2{
+  font-family:'neon' ;
+  margin-bottom: 15px;
+ font-size: 3em;
+}
+label{
+  margin:20px 10px;
+  color: white;
+  background-color: var(--cor5);
+  padding: 1px;
+  min-width: 50px;
+  font-weight: bold;
+  border-radius: 2px;
+  border:1px solid #38230a;
+}
+input{
+  margin: 08px 2px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+#botoes{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+article{
+  background-color: rgb(165, 185, 207);
+  padding: 10px;
+  border: 2px solid var(--cor8);
+  margin: 5px;
+  width: 50%;
+  color: #0479b4;
+}
+article h1{
+  color: var(--cor5);
+  text-shadow: 2px 2px 2px rgb(245, 6, 6);
+  text-align: center;
+}
+#oculosf1 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background-image: url('../imagens/index/oculosf1.png');
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  font-size:4em;
+  color: #a6691f;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.205);
+}
+#oculosf1 p{
+  opacity: 0;
+}
+#oculosf1 > p:hover{
+  opacity: 1;
+}
+#oculosf1:hover{
+  background-image: url('../imagens/index/oculosl1.png');
+  opacity: 1;
+}
+footer{
+  display: flex;
+  background-color: var(--cor7);
+  color: white;
+  font-size: 0.8em;
+  padding: 5px;
+  text-shadow: 2px 2px rgba(179, 10, 10);
+  justify-content: center;
+}
+footer a {
+  color:rgba(179, 10, 10);
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: var(--cor10);
+  padding: 4px;
+
+}
+footer a:hover{
+  text-decoration: underline;
+  color:white;
+  background-color: var(--cor2);
+  transition-duration: .5s;
+}
+footer button{
+  display: inline-block;
+  background-color: var(--cor5);
+  margin-left: 10px;
+  padding: 4px;
+}
+.icone{
+  padding: 1px;
+}
+#end{
+  margin-bottom: 10px;
+  margin-left: 9px;
+}
+form h2{
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-family: 'neon';
+  color: black;
+}
