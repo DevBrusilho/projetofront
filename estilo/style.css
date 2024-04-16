@@ -180,8 +180,8 @@ article{
   color: #0479b4;
 }
 article h1{
-  color: var(--cor5);
-  text-shadow: 2px 2px 2px rgb(245, 6, 6);
+  color: black;
+  text-shadow: 2px 2px 2px var(--cor5);
   text-align: center;
 }
 #oculosf1 {
@@ -220,7 +220,7 @@ footer a {
   color:rgba(179, 10, 10);
   font-weight: bolder;
   text-decoration: none;
-  background-color: var(--cor10);
+  background-color: var(--cor7);
   padding: 4px;
 
 }
