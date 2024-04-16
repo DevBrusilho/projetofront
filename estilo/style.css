@@ -31,9 +31,13 @@ body{
   font-family: var(--fonte-padrao);
 }
 header{   
-  background-image: linear-gradient(to bottom, var(--cor7), var(--cor8), var(--cor2)); 
+  background-image:linear-gradient(to bottom, var(--cor7), var(--cor8), var(--cor2)) ;
+  background-image: url('../imagens/oculosfundo.png');
   text-align: center; 
   padding-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30%;
 }
 header > h1{       
   color:var(--cor5);
@@ -66,13 +70,7 @@ header > button > a{
   padding: 4px;
   border-radius: 5px;
 }
-header > img{
-  width: 15%;
-  padding: 10px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
+
 nav{
   background-color: var(--cor2);
   padding: 10px;
@@ -94,7 +92,11 @@ nav a:hover{
 main{
   display: flex;
   background-color: rgb(25, 96, 202);
-  max-width: 800px;
+  background-image: url('../imagens/oie_transparent3.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+  max-width: 1000px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
@@ -102,6 +104,7 @@ main{
   padding: 2px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
   justify-content: center;
+
 
 }
 main p{
