@@ -92,11 +92,7 @@ nav a:hover{
 main{
   display: flex;
   background-color: rgb(25, 96, 202);
-  background-image: url('../imagens/oie_transparent3.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 30%;
-  max-width: 1000px;
+  max-width: 95%;
   margin: auto;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
@@ -179,7 +175,7 @@ article{
   padding: 10px;
   border: 2px solid var(--cor8);
   margin: 5px;
-  width: 50%;
+  width: 90%;
   color: #0479b4;
 }
 article h1{
@@ -187,35 +183,150 @@ article h1{
   text-shadow: 2px 2px 2px var(--cor5);
   text-align: center;
 }
+article h2{
+  color: var(--cor5);
+  text-shadow: 1px 1px var(--cor13);
+}
+.vitrine{
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0);
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#p1{
+  padding-left: 10px;
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+} 
+#p2{
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+#p3{
+  font-weight: bolder;
+  color:rgb(24, 173, 24);
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+.vitrine h6{
+  padding-left: 10px;
+}
 #oculosf1 {
   display: flex;
   width: 200px;
   height: 200px;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.336);
   background-image: url('../imagens/index/oculosf1.png');
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  font-size:4em;
-  color: #a6691f;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.205);
-}
-#oculosf1 p{
-  opacity: 0;
-}
-#oculosf1 > p:hover{
-  opacity: 1;
+  font-size:15px;
+  color: black;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 #oculosf1:hover{
   background-image: url('../imagens/index/oculosl1.png');
-  opacity: 1;
 }
+
+#oculosf2 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  background-image: url('../imagens/index/oculosf2.jpg');
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  font-size:15px;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#oculosf2:hover{
+  background-image: url('../imagens/index/oculosl2.jpg');
+}
+#oculosf3 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  background-image: url('../imagens/index/oculosf3.jpg');
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  font-size:15px;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#oculosf3:hover{
+  background-image: url('../imagens/index/oculosl3.jpg');
+}
+
+#oculosf4 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  background-image: url('../imagens/index/oculosescuros/oculosf4.jpg');
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  font-size:15px;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#oculosf4:hover{
+  background-image: url('../imagens/index/oculosescuros/oculosl4.jpg');
+}
+#oculosf5 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  background-image: url('../imagens/index/oculosescuros/oculosf5.jpg');
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  font-size:15px;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#oculosf5:hover{
+  background-image: url('../imagens/index/oculosescuros/oculosl5.jpg');
+}
+#oculosf6 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  background-image: url('../imagens/index/oculosescuros/oculosf6.jpg');
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  font-size:15px;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#oculosf6:hover{
+  background-image: url('../imagens/index/oculosescuros/oculosl6.2.jpg');
+}
+
 footer{
   display: flex;
   background-color: var(--cor7);
   color: white;
   font-size: 0.8em;
-  padding: 5px;
+  padding: 5px;bl
   text-shadow: 2px 2px rgba(179, 10, 10);
   justify-content: center;
 }
